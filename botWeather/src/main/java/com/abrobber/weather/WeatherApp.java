@@ -58,7 +58,8 @@ public class WeatherApp implements CommandLineRunner {
         
         Iterable<Weather> iterator = repository.findAll();
 
-        System.out.println("\nTodos los resgistros: ");
+        System.out.println("\nTodos los registros: ");
+        System.out.println("\nCiudad\t\tTemp\tPresion\tHumedad\tFecha");
         iterator.forEach(name -> System.out.println(name));
 
         List<Weather> city = repository.findByName("Heredia");
